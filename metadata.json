@@ -1,0 +1,6 @@
+{
+  "name": "PromptMatrix CZ - Generátor promptů pro AI modely",
+  "description": "Profesionální generátor a správce špičkových promptů v češtině pro Claude Code, Cursor, Blender, Adobe, Midjourney a webový vývoj bez AI slopu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

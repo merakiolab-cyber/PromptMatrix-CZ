@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Geist', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/* Scaled UI by 20% for enhanced 4K and Ultrawide readability */
+html {
+  font-size: 19px; /* Default browser is 16px -> 16px * 1.2 = 19.2px (~20% increase) */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #000000;
+  color: #ededed;
+  overflow-x: hidden;
+  letter-spacing: -0.012em;
+}
+
+/* Subtle Vercel dot grid background utility */
+.vercel-grid {
+  background-size: 28px 28px;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+}
+
+/* Crisp 1px borders & card styling */
+.vercel-card {
+  background-color: #0a0a0a;
+  border: 1px solid #222222;
+  transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vercel-card:hover {
+  border-color: #383838;
+}
+
+/* Sleek Vercel scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+/* Smooth button micro-interactions & tactile spring feedback */
+button, select, a, [role="button"] {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 150ms;
+  will-change: transform, background-color, border-color;
+}
+
+button:active:not(:disabled), .btn-touch:active {
+  transform: scale(0.975);
+}
+
+/* GPU hardware acceleration for smooth tab & card switching */
+.smooth-gpu {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
