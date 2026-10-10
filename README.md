@@ -4,6 +4,12 @@ Profesionální generátor a správce promptů v češtině pro AI modely, Claud
 
 ---
 
+## 🖼️ Ukázka aplikace
+
+![PromptMatrix CZ Preview](./src/assets/generator-preview.png)
+
+---
+
 ## 🌟 Klíčové vlastnosti
 
 - **🧠 Pokročilé šablony promptů**: Předpřipravené a ověřené šablony pro vývoj, design, grafiku a kódování.
