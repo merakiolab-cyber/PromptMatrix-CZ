@@ -13,6 +13,8 @@ import { MOTION_ANIMATION_TEMPLATES } from './templates/motionAnimation';
 import { BRAND_IDENTITY_TEMPLATES } from './templates/brandIdentity';
 import { IDEAMAKING_TEMPLATES } from './templates/ideamaking';
 import { PRINT_PREPRESS_TEMPLATES } from './templates/printPrepress';
+import { WIN11_REFACTOR_TEMPLATES } from './templates/win11Refactor';
+import { ANTIGRAVITY_WIN11_TEMPLATES } from './templates/antigravityWin11';
 
 export const DEFAULT_TEMPLATES: PromptTemplate[] = [
   ...FIGMA_MCP_TEMPLATES,
@@ -28,5 +30,7 @@ export const DEFAULT_TEMPLATES: PromptTemplate[] = [
   ...MOTION_ANIMATION_TEMPLATES,
   ...BRAND_IDENTITY_TEMPLATES,
   ...IDEAMAKING_TEMPLATES,
-  ...PRINT_PREPRESS_TEMPLATES
+  ...PRINT_PREPRESS_TEMPLATES,
+  ...WIN11_REFACTOR_TEMPLATES,
+  ...ANTIGRAVITY_WIN11_TEMPLATES
 ];
